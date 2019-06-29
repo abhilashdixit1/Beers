@@ -1,0 +1,53 @@
+.background {
+  height: 100vh;
+  width: auto;
+  background: url(https://i.ibb.co/rGb51Bw/beerpour.png) no-repeat center center;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tiles {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: left;
+  font-size: 25px;
+}
+
+.name {
+  padding: 1em;
+}
+.from {
+  padding: 1em;
+}
+
+.des {
+  padding: 1em;
+}
+
+.img {
+  height: 60vh;
+  width: 30vh;
+}
+
+.title {
+  color: yellow;
+}
+
+.header {
+  display: flex;
+}
+
+.card {
+  background-color: rgba(58, 57, 55, 0.116);
+  margin: 1em;
+  width: 500px;
+}

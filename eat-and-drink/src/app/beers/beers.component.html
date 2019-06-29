@@ -1,0 +1,93 @@
+<div *ngIf="items">
+  <div class="center">
+    <img src="https://i.ibb.co/Cvjz32B/beerbot.png" alt="beerbot" />
+  </div>
+
+  <div class="center">
+    <div class="allAbout">
+      BEER
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="allAbout1">(since iternity - till iternity)</div>
+  </div>
+
+  <div class="center">
+    <div class="introduction">
+      Hi I am Abhilash and I am the developer and designer of this website. I
+      created this website to talk about Beers. I travelled to many countries
+      and tasted their most famous beers. Here is a collection of some beers I
+      tried. I would travel more and taste more and more Beers and this
+      collection will keep on increasing and updating. Have a look into some
+      amazing beers from different countries.
+    </div>
+  </div>
+  <div class="center">
+    <div class="center" *ngFor="let item of items; index as i">
+      <div *ngIf="item.itemName; else other_content">
+        <mat-card class="card">
+          <div class="tiles">
+            <div class="center">
+              <div class="sec1">
+                <div class="nameTitle">Country</div>
+                <div class="name">
+                  {{ item.itemFrom }}
+                  <img class="flag" src="{{ item.itemFlag }}" />
+                </div>
+                <div class="fromTitle">Beer</div>
+                <div class="from">{{ item.itemName }}</div>
+              </div>
+
+              <div class="sec2">
+                <img
+                  class="beerImage"
+                  src="{{ item.itemImage }}"
+                  alt="beerbot"
+                />
+              </div>
+            </div>
+
+            <div class="desTitle">DETAILS</div>
+            <div class="des">
+              {{ item.itemDescription }}
+            </div>
+          </div>
+        </mat-card>
+      </div>
+
+      <ng-template #other_content>
+        <mat-card class="fullcard">
+          <div class="center">
+            <div class="fact">"{{ item.itemDescription }}"</div>
+          </div>
+        </mat-card>
+      </ng-template>
+    </div>
+  </div>
+
+  <div class="bar"></div>
+
+  <div class="center">
+    <a href="https://www.google.com" target="_blank"
+      ><img src="https://img.icons8.com/bubbles/50/000000/linkedin.png"
+    /></a>
+    <a href="https://www.facebook.com/robomaniacabhi" target="_blank"
+      ><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png"
+    /></a>
+    <a href="https://www.google.com" target="_blank"
+      ><img src="https://img.icons8.com/bubbles/50/000000/instagram.png"
+    /></a>
+    <a
+      href="mailto:abhilashdixitece@gmail.com?subject = Feedback&body = Message"
+      ><img src="https://img.icons8.com/bubbles/50/000000/email.png"
+    /></a>
+  </div>
+</div>
+<div *ngIf="!items">
+  <img
+    class="beerImage"
+    src="https://i.ibb.co/Cvjz32B/beerbot.png"
+    alt="beerbot"
+  />
+</div>

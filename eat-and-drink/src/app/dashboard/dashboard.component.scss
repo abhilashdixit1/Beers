@@ -1,0 +1,47 @@
+.center {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  font-size: 90px;
+  // font-family: "Chalkduster";
+  font-family: "Phosphate";
+  text-align: center;
+  color: white;
+}
+
+.description {
+  font-size: 20px;
+  font-family: "Chalkduster";
+  // font-family: "Phosphate";
+  text-align: center;
+  color: white;
+}
+
+.img {
+  padding-top: 2%;
+  width: 15em;
+  height: 15em;
+}
+
+.cheers {
+  margin-top: 2%;
+  font-size: 30px;
+  font-family: "Apple Chancery";
+  // font-family: "Phosphate";
+  text-align: center;
+  color: black(231, 180, 39);
+  background-color: rgb(231, 180, 39);
+  width: 5em;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.cheersImg {
+  margin-top: 2%;
+  cursor: pointer;
+}
